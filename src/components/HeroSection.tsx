@@ -14,14 +14,9 @@ const HeroContainer = styled.section`
   background-size: cover;
   height: 100vh;
   color: ${({ theme }) => theme.secondaryColor};
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 `;
 
-const HeroTextContainer = styled.div`
-  background-color: rgba(26, 42, 76, 0.8); // Add a semi-transparent background
-  padding: 2rem;
-  border-radius: 8px;
-`;
 
 const Headline = styled.h1`
   font-size: 3rem;

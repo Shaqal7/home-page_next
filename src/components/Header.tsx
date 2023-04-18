@@ -11,7 +11,7 @@ const HeaderContainer = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1001; // Ensures the header stays on top of other elements, including the menu
+  z-index: 1001;
 `;
 
 const Logo = styled.div`
