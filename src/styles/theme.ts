@@ -1,5 +1,5 @@
 // styles/theme.ts
-const theme = {
+export const theme = {
   primaryColor: '#1a1a1a',
   secondaryColor: '#ffffff',
   primaryAccent: '#ff8f00',
@@ -7,5 +7,3 @@ const theme = {
   textColor: '#333',
   // Other theme values here...
 };
-
-export default theme;

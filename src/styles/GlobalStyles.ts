@@ -1,7 +1,7 @@
 // styles/GlobalStyles.ts
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -11,5 +11,3 @@ const GlobalStyles = createGlobalStyle`
 
   // Other global styles here...
 `;
-
-export default GlobalStyles;
