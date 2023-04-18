@@ -7,6 +7,11 @@ const HeaderContainer = styled.nav`
   align-items: center;
   padding: 1rem 2rem;
   background-color: ${({ theme }) => theme.primaryColor};
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001; // Ensures the header stays on top of other elements, including the menu
 `;
 
 const Logo = styled.div`
