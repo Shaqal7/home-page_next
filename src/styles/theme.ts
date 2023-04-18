@@ -1,7 +1,11 @@
+// styles/theme.ts
 const theme = {
-  primaryColor: "#4a4a4a",
-  secondaryColor: "#0070f3",
-  // Add more theme-related constants as needed
+  primaryColor: '#1a1a1a',
+  secondaryColor: '#ffffff',
+  primaryAccent: '#ff8f00',
+  backgroundColor: '#f0f0f0',
+  textColor: '#333',
+  // Other theme values here...
 };
 
 export default theme;
