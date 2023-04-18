@@ -41,6 +41,7 @@ const UserName = styled.h3`
 
 const UserQuote = styled.p`
   font-size: 1rem;
+  color: ${({ theme }) => theme.whiteText};
 `;
 
 const testimonialsData = [

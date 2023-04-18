@@ -37,6 +37,7 @@ const FeatureTitle = styled.h2`
 
 const FeatureDescription = styled.p`
   font-size: 1rem;
+  color: ${({ theme }) => theme.whiteText};
 `;
 
 const featuresData = [

@@ -17,10 +17,17 @@ const HeroContainer = styled.section`
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
 `;
 
+const HeroTextContainer = styled.div`
+  background-color: rgba(26, 42, 76, 0.8); // Add a semi-transparent background
+  padding: 2rem;
+  border-radius: 8px;
+`;
+
 const Headline = styled.h1`
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
+  color: ${({ theme }) => theme.whiteText};
   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
@@ -32,6 +39,7 @@ const Description = styled.p`
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 2rem;
+  color: ${({ theme }) => theme.whiteText};
 
   @media (max-width: 768px) {
     font-size: 1.2rem;

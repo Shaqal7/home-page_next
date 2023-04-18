@@ -8,6 +8,7 @@ declare module 'styled-components' {
     primaryAccent: string;
     backgroundColor: string;
     textColor: string;
+    whiteText: string;
     // Other theme values here...
   }
 }
