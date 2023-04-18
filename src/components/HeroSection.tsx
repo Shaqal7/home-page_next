@@ -8,7 +8,12 @@ const HeroContainer = styled.section`
   justify-content: center;
   align-items: center;
   padding: 4rem 1rem;
-  background-image: url('/images/hero-background.png');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url('/images/hero-background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,12 +22,11 @@ const HeroContainer = styled.section`
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 `;
 
-
 const Headline = styled.h1`
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  color: ${({ theme }) => theme.whiteText};
+  color: ${({ theme }) => theme.secondaryColor};
   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
