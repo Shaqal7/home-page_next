@@ -21,18 +21,19 @@ const NavLinks = styled.ul<{ open: boolean }>`
 
   @media (max-width: 768px) {
     position: fixed;
-    top: 64px; // Change this value if the header height is different
+    top: 64px;
     left: 0;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
     padding: 1rem;
     background-color: ${({ theme }) => theme.primaryColor};
-    transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
+    transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-130%)')};
     transition: transform 0.3s ease-in-out;
-    z-index: 1000; // Ensures the menu stays on top of other elements
+    z-index: 1000;
   }
 `;
+
 
 
 const NavLink = styled.li`
