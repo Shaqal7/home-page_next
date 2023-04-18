@@ -3,46 +3,67 @@ import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 1rem 2rem;
   background-color: ${({ theme }) => theme.primaryColor};
-  color: ${({ theme }) => theme.secondaryColor};
-`;
 
-const FooterLinks = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
-`;
-
-const FooterLink = styled.a`
-  font-size: 1rem;
-  text-decoration: none;
-  color: ${({ theme }) => theme.secondaryColor};
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: ${({ theme }) => theme.primaryAccent};
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
   }
 `;
 
-const FooterText = styled.p`
-  font-size: 1rem;
-  margin-left: 2rem;
+const LinksContainer = styled.div`
+  display: flex;
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+`;
+
+const FooterLink = styled.a`
+  color: ${({ theme }) => theme.secondaryColor};
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const SocialIcons = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
+const Copyright = styled.p`
+  color: ${({ theme }) => theme.secondaryColor};
+  margin: 0;
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `;
 
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      <FooterLinks>
-        <FooterLink href="#about">About</FooterLink>
-        <FooterLink href="#features">Features</FooterLink>
-        <FooterLink href="#testimonials">Testimonials</FooterLink>
-        <FooterLink href="#contact">Contact</FooterLink>
-      </FooterLinks>
-      <FooterText>&copy; {new Date().getFullYear()} Voice Assistant</FooterText>
+      <LinksContainer>
+        <FooterLink href="#">Terms of Service</FooterLink>
+        <FooterLink href="#">Privacy Policy</FooterLink>
+        <FooterLink href="#">Cookie Policy</FooterLink>
+      </LinksContainer>
+      <SocialIcons>
+        {/* Replace with your social media icons */}
+        <i className="fab fa-facebook-f"></i>
+        <i className="fab fa-twitter"></i>
+        <i className="fab fa-instagram"></i>
+      </SocialIcons>
+      <Copyright>© {new Date().getFullYear()} VoiceAssistant. All rights reserved.</Copyright>
     </FooterContainer>
   );
 };
