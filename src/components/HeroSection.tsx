@@ -1,3 +1,4 @@
+// HeroSection.tsx
 import React from 'react';
 import styled from 'styled-components';
 
@@ -13,6 +14,7 @@ const HeroContainer = styled.section`
   background-size: cover;
   height: 100vh;
   color: ${({ theme }) => theme.secondaryColor};
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
 `;
 
 const Headline = styled.h1`

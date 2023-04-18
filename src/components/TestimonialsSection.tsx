@@ -46,18 +46,18 @@ const UserQuote = styled.p`
 const testimonialsData = [
   {
     name: 'Alice',
-    photo: '/images/cat1.jpg',
+    photo: '/images/user1.png',
     quote: 'The Voice Assistant app has greatly improved my productivity and communication with my team.',
   },
   {
     name: 'Bob',
-    photo: '/images/cat2.jpg',
-    quote: 'I love the convenience of using either voice or text to interact with the Voice Assistant.',
+    photo: '/images/user3.png',
+    quote: 'Voice Assistant has become an essential tool for managing my daily tasks and staying organized.',
   },
   {
     name: 'Charlie',
-    photo: '/images/cat3.jpg',
-    quote: 'Voice Assistant has become an essential tool for managing my daily tasks and staying organized.',
+    photo: '/images/user2.png',
+    quote: 'I love the convenience of using either voice or text to interact with the Voice Assistant.',
   },
 ];
 
